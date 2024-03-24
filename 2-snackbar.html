@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/vanilla-app-template/commonHelpers2.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-77e16229.js">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-7a007824.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/2-snackbar-5fb45411.css">
+</head>
+<body>
+    <a href="./index.html" class="back" style="font-size:30px">↩</a>
+
+      <form class="form">
+            <label class="delayLabel">
+              Delay (ms)
+              <input class="delay" type="number" name="delay" required />
+            </label>
+        
+            <fieldset class="state">
+              <legend class="delay-label">State</legend>
+              <label class="options-label">
+                <input type="radio" name="state" value="fulfilled" required />
+                Fulfilled
+              </label>
+              <label class="options-label">
+                <input type="radio" name="state" value="rejected" required />
+                Rejected
+              </label>
+            </fieldset>
+        
+            <button class="btn" type="submit">Create notification</button>
+        </form>
+    
+</body>
+</html>

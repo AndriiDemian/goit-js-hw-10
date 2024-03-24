@@ -8,14 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/vanilla-app-template/assets/1-timer-509a8582.css">
+  <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-77e16229.js">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-7a007824.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/1-timer-62e6d030.css">
 </head>
 <body>
     <a href="./index.html" style="font-size:30px">↩</a>
-    <div class="active">
-        <input class="inpTxt" type="text" id="datetime-picker" placeholder="2023-10-08 17:25"/>
-        <button class="btn" type="button" data-start>Start</button>
-    </div>
+    
+    <input class="inpTxt" type="text" id="datetime-picker"/>
+    <button class="btn disabled normal" type="button" data-start>Start</button>
+
 
     <div class="timer">
         <div class="field">
@@ -40,7 +44,7 @@
     </div>
 
 
-    <script href="./js/1-timer.js"></script>
+    
 
 </body>
 </html>
