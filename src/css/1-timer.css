@@ -28,6 +28,7 @@ img {
 }
 
 a {
+    display: flex;
     text-decoration: none;
     color: black;
 }
@@ -35,17 +36,13 @@ a {
 /* ================================= */
 
 
-.active {
-    display: flex;
-    gap: 8px;
-    max-height: 40px;
-    margin-bottom: 32px;
-    margin-top: 20px;
-}
 
 .inpTxt {
-    width: 355px;
-    
+    margin-right: 8px;
+    margin-bottom: 32px;
+    margin-top: 20px;
+    width: 272px;
+    height: 40px;
     padding: 8px;
     border: 1px solid #808080;
     border-radius: 4px;
@@ -56,9 +53,29 @@ a {
     border: 1px solid #000;
 }
 
-.inpTxt:active {
+
+
+/* .inpTxt:enabled {
     color: #000;
     border: 1px solid #4e75ff;
+} */
+
+.disabled {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    border: none;
+    background: #cfcfcf;
+    cursor: pointer;
+  
+    color: #989898;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #989898;
 }
 
 .btn {
@@ -66,7 +83,6 @@ a {
     border-radius: 8px;
     border: none;
     padding: 8px 16px;
-    background: #cfcfcf;
     cursor: pointer;
 
     font-family: "Montserrat", sans-serif;
@@ -75,9 +91,22 @@ a {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #989898;
+    background: #4e75ff;
 
     transition: color 300ms ease, background-color 300ms ease;
 }
+
+.btn:disabled {
+    background: #cfcfcf;
+    color: #989898;
+}
+
+.normal {
+    background-color: #4e75ff;
+    color: #fff;
+}
+
+
 
 .btn:hover {
     background: #6c8cff;
